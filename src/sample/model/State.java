@@ -1,5 +1,7 @@
 package sample.model;
 
+import javafx.scene.control.Label;
+
 public abstract class State {
 
     Question question;
@@ -8,7 +10,7 @@ public abstract class State {
         this.question = question;
     }
 
-    abstract void clickAnswer();
-    abstract void clickNext();
+    public abstract void clickAnswer(Label label);
+    public abstract void clickNext(Label label);
 
 }

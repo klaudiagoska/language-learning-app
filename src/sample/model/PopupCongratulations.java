@@ -12,8 +12,6 @@ public class PopupCongratulations implements IObserver {
 
     @Override
     public void update() {
-        //wyskakiwanie okienka
-
         Stage popupWindow = new Stage();
         popupWindow.initModality(Modality.APPLICATION_MODAL);
         popupWindow.setTitle("Congratulations!");
@@ -26,6 +24,5 @@ public class PopupCongratulations implements IObserver {
         Scene scene1 = new Scene(layout, 300, 100);
         popupWindow.setScene(scene1);
         popupWindow.showAndWait();
-
     }
 }

@@ -9,16 +9,15 @@ public class Menu extends AppController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 
     public void goToOneChoiceQuestions(ActionEvent actionEvent) {
         createOneChoiceQuestions();
-        goTo.execute(actionEvent, "../view/oneChoice.fxml");
+        goTo.execute(actionEvent, "../view/oneChoiceQuestion.fxml");
     }
 
     public void goToInputQuestions(ActionEvent actionEvent) {
         createInputQuestions();
-        goTo.execute(actionEvent, "../view/input.fxml");
+        goTo.execute(actionEvent, "../view/inputQuestion.fxml");
     }
 }

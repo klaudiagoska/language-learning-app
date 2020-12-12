@@ -1,5 +1,7 @@
 package sample.model;
 
+import javafx.scene.control.Label;
+
 public class NonAnsweredState extends State {
 
     public NonAnsweredState(Question question) {
@@ -7,12 +9,13 @@ public class NonAnsweredState extends State {
     }
 
     @Override
-    void clickAnswer() {
+    public void clickAnswer(Label label) {
+        label.setText("");
         question.changeState(new AnsweredState(question));
     }
 
     @Override
-    void clickNext() {
-        System.out.println("NIE MOZNA JESZCZE PRZEJSC DO NASTEPNEGO OKNA");
+    public void clickNext(Label label) {
+        label.setText("You have to answer!");
     }
 }
