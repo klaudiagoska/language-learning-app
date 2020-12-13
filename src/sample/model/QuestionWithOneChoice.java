@@ -5,8 +5,6 @@ import java.util.*;
 public class QuestionWithOneChoice extends Question {
 
     public List<String> answers;
-    public int correctAnswer;
-    public int userAnswer;
 
     public QuestionWithOneChoice() {
     }
@@ -28,7 +26,6 @@ public class QuestionWithOneChoice extends Question {
             tmp[l.get(i)] = answers.get(i);
         }
         answers = Arrays.asList(tmp);
-        correctAnswer = l.get(correctAnswer);
     }
 
     @Override

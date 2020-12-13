@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Questions {
 
-    private List<Question> questionsList;
+    private final List<Question> questionsList;
 
     public Questions() {
         questionsList = new ArrayList<>();
@@ -25,6 +25,10 @@ public class Questions {
 
     public IIterator createIterator() {
         return new QuestionsIterator(this);
+    }
+
+    public void clear() {
+        questionsList.clear();
     }
 
 }

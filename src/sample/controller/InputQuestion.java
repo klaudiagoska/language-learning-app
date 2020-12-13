@@ -51,6 +51,8 @@ public class InputQuestion extends AppController{
             updateQuestion();
             if (currentQuestion != null) {
                 displayQuestion();
+            } else {
+                goTo.execute(actionEvent, "../view/end.fxml");
             }
         } else {
             currentQuestion.clickNext(alert);

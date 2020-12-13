@@ -39,6 +39,7 @@ public class OneChoiceQuestion extends AppController {
     }
 
     private void displayQuestion() {
+        alert.setText("");
         currentQuestion.shuffle();
         answer0.setSelected(false);
         answer1.setSelected(false);
@@ -49,7 +50,6 @@ public class OneChoiceQuestion extends AppController {
         answer1.setText(currentQuestion.answers.get(1));
         answer2.setText(currentQuestion.answers.get(2));
         answer3.setText(currentQuestion.answers.get(3));
-        alert.setText("");
     }
 
     public void nextQuestion(ActionEvent actionEvent) {
@@ -58,6 +58,8 @@ public class OneChoiceQuestion extends AppController {
             updateQuestion();
             if (currentQuestion != null) {
                 displayQuestion();
+            } else {
+                goTo.execute(actionEvent, "../view/end.fxml");
             }
         } else {
             currentQuestion.clickNext(alert);
@@ -79,27 +81,27 @@ public class OneChoiceQuestion extends AppController {
     }
 
     private void checkAnswer() {
-        if (currentQuestion.userAnswer == currentQuestion.correctAnswer) {
+        if (currentQuestion.userAnswer.equals(currentQuestion.correctAnswer)) {
             User.getINSTANCE().addPoints(currentQuestion.calculatePoints());
         }
     }
 
     private void setSelectedAnswer() {
         if (answer0.isSelected()) {
-            currentQuestion.userAnswer = 0;
+            currentQuestion.userAnswer = answer0.getText();
         }
         if (answer1.isSelected()) {
-            currentQuestion.userAnswer = 1;
+            currentQuestion.userAnswer = answer1.getText();
         }
         if (answer2.isSelected()) {
-            currentQuestion.userAnswer = 2;
+            currentQuestion.userAnswer = answer2.getText();
         }
         if (answer3.isSelected()) {
-            currentQuestion.userAnswer = 3;
+            currentQuestion.userAnswer = answer3.getText();
         }
     }
 
-    private boolean answerIsSelected(){
+    private boolean answerIsSelected() {
         return answer0.isSelected() || answer1.isSelected() || answer2.isSelected() || answer3.isSelected();
     }
 }
