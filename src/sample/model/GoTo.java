@@ -10,6 +10,10 @@ import sample.controller.AppController;
 
 import java.io.IOException;
 
+/*
+GoTo class represents Command design pattern.
+ */
+
 public class GoTo implements ICommand {
 
     @Override

@@ -8,6 +8,10 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/*
+PopupCongratulations represents Observer design pattern.
+ */
+
 public class PopupCongratulations implements IObserver {
 
     @Override

@@ -19,7 +19,8 @@ public abstract class Question implements IQuestion {
         state = new NonAnsweredState(this);
     }*/
 
-    public Question() {}
+    public Question() {
+    }
 
     public Question(Question question) {
         if (question != null) {
@@ -75,6 +76,9 @@ public abstract class Question implements IQuestion {
         return correctAnswer;
     }
 
+    /*
+    clone() method represents Prototype design pattern.
+     */
     public abstract Question clone();
 
 }
