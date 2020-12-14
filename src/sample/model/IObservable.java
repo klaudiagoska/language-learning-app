@@ -1,5 +1,9 @@
 package sample.model;
 
+/*
+IObservable interface represents Observer design pattern.
+ */
+
 public interface IObservable {
 
     void attach(IObserver observer);

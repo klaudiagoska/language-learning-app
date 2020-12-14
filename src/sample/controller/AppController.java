@@ -7,6 +7,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/*
+Implementing IInitializable interface (overriding initialize method)
+and extending AppController class by other class in controller package
+represent Template method design pattern.
+ */
+
 public abstract class AppController implements IInitializable {
 
     GoTo goTo = new GoTo();

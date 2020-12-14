@@ -3,6 +3,11 @@ package sample.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+User class represents Singleton design pattern.
+
+ */
+
 public final class User implements IObservable {
 
     private static User INSTANCE;

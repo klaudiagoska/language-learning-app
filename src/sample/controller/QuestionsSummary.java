@@ -25,6 +25,9 @@ public class QuestionsSummary extends AppController {
         currentQuestion = iterator.next();
     }
 
+    /*
+    displayQuestion() method represents Factory design pattern.
+     */
     private void displayQuestion() {
         if (currentQuestion.correct()) {
             displayCorrectQuestion(currentQuestion.clone());
