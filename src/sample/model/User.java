@@ -40,6 +40,10 @@ public final class User implements IObservable {
         }
     }
 
+    public void clearScore() {
+        score = 0;
+    }
+
     @Override
     public void attach(IObserver observer) {
         observerList.add(observer);
@@ -54,6 +58,5 @@ public final class User implements IObservable {
     public void notifyObservers() {
         observerList.forEach(IObserver::update);
     }
-
 
 }

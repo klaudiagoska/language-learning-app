@@ -13,6 +13,7 @@ public abstract class AppController implements IInitializable {
     static Questions questions = new Questions();
 
     public void createOneChoiceQuestions() {
+        User.getINSTANCE().clearScore();
         questions.clear();
         List<Question> questionsList = new ArrayList<>();
         QuestionWithOneChoice question1 = new QuestionWithOneChoice();
@@ -32,6 +33,7 @@ public abstract class AppController implements IInitializable {
     }
 
     public void createInputQuestions() {
+        User.getINSTANCE().clearScore();
         questions.clear();
         List<Question> questionList = new ArrayList<>();
         QuestionWithInput question1 = new QuestionWithInput();
@@ -49,7 +51,7 @@ public abstract class AppController implements IInitializable {
     }
 
     private void addQuestions(List<Question> questionList) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < questionList.size() / 2; i++) {
             questions.addQuestion(questionList.get(i));
         }
     }
