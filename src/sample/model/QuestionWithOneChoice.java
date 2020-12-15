@@ -6,8 +6,7 @@ public class QuestionWithOneChoice extends Question {
 
     public List<String> answers;
 
-    public QuestionWithOneChoice() {
-    }
+    public QuestionWithOneChoice() {}
 
     public QuestionWithOneChoice(QuestionWithOneChoice question) {
         super(question);

@@ -2,7 +2,6 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
-
 public abstract class Question implements IQuestion {
 
     private int id;
@@ -32,16 +31,8 @@ public abstract class Question implements IQuestion {
         }
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getContent() {

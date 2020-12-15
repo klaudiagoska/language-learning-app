@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 /*
 PopupCongratulations represents Observer design pattern.
  */
-
 public class PopupCongratulations implements IObserver {
 
     @Override
@@ -19,13 +18,13 @@ public class PopupCongratulations implements IObserver {
         Stage popupWindow = new Stage();
         popupWindow.initModality(Modality.APPLICATION_MODAL);
         popupWindow.setTitle("Congratulations!");
-        Label label1 = new Label("You have " + User.getINSTANCE().getScore() + " points!");
+        Label label1 = new Label("You did great!");
         Button button1 = new Button("Close");
         button1.setOnAction(e -> popupWindow.close());
         VBox layout = new VBox(10);
         layout.getChildren().addAll(label1, button1);
         layout.setAlignment(Pos.CENTER);
-        Scene scene1 = new Scene(layout, 300, 100);
+        Scene scene1 = new Scene(layout, 200, 100);
         popupWindow.setScene(scene1);
         popupWindow.showAndWait();
     }

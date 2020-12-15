@@ -5,15 +5,12 @@ import java.util.List;
 
 /*
 User class represents Singleton design pattern.
-
  */
-
 public final class User implements IObservable {
 
     private static User INSTANCE;
-    private static String name;
     private int score;
-    private List<IObserver> observerList = new ArrayList<>();
+    private final List<IObserver> observerList = new ArrayList<>();
 
     private User() {
         score = 0;
@@ -26,23 +23,12 @@ public final class User implements IObservable {
         return INSTANCE;
     }
 
-    public static void setName(String name) {
-        User.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public int getScore() {
         return score;
     }
 
     public void addPoints(int points) {
         score += points;
-        if (score != 0 && score % 10 == 0) {
-            notifyObservers();
-        }
     }
 
     public void clearScore() {

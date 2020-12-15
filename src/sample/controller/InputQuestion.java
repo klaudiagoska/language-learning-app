@@ -70,6 +70,7 @@ public class InputQuestion extends AppController{
     private void checkAnswer() {
         if (currentQuestion.correctAnswer.equals(userAnswer.getText())) {
             User.getINSTANCE().addPoints(currentQuestion.calculatePoints());
+            questions.correctAnswersAmount++;
         }
     }
 }
