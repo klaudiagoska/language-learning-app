@@ -9,15 +9,13 @@ public abstract class Question {
     public String correctAnswer;
     public String userAnswer;
 
-    /*public Question(int id, String content, List<String> answers, int correctAnswer) {
-        this.id = id;
+    public Question() {}
+
+    public Question(String content, String correctAnswer) {
         this.content = content;
-        this.answers = List.copyOf(answers);
         this.correctAnswer = correctAnswer;
         state = new NonAnsweredState(this);
-    }*/
-
-    public Question() {}
+    }
 
     public Question(Question question) {
         if (question != null) {

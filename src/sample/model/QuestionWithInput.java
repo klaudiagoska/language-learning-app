@@ -4,6 +4,10 @@ public class QuestionWithInput extends Question {
 
     public QuestionWithInput() {}
 
+    public QuestionWithInput(String content, String correctAnswer) {
+        super(content, correctAnswer);
+    }
+
     public QuestionWithInput(QuestionWithInput questionWithInput) {
         super(questionWithInput);
     }

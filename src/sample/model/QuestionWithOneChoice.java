@@ -8,11 +8,15 @@ public class QuestionWithOneChoice extends Question {
 
     public QuestionWithOneChoice() {}
 
+    public QuestionWithOneChoice(String content, String correctAnswer, List<String> answers) {
+        super(content, correctAnswer);
+        this.answers = List.copyOf(answers);
+    }
+
     public QuestionWithOneChoice(QuestionWithOneChoice question) {
         super(question);
         if (question != null) {
             answers = List.copyOf(question.answers);
-            correctAnswer = question.correctAnswer;
         }
     }
 
