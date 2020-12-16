@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InputQuestion">
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InputQuestion">
    <children>
-      <Label fx:id="question" layoutX="282.0" layoutY="75.0" prefHeight="18.0" prefWidth="36.0" text="Label" />
-      <TextField fx:id="userAnswer" layoutX="225.0" layoutY="135.0" />
-      <Button fx:id="answer" layoutX="199.0" layoutY="213.0" mnemonicParsing="false" onAction="#answer" text="Answer" />
-      <Button fx:id="nextQuestion" layoutX="328.0" layoutY="213.0" mnemonicParsing="false" onAction="#nextQuestion" text="Next question" />
-      <Label fx:id="alert" layoutX="286.0" layoutY="291.0" text="Label" />
+      <TextField fx:id="userAnswer" layoutX="144.0" layoutY="123.0" prefHeight="26.0" prefWidth="161.0" />
+      <Button fx:id="answer" layoutX="110.0" layoutY="177.0" mnemonicParsing="false" onAction="#answer" prefHeight="26.0" prefWidth="90.0" text="Answer" />
+      <Button fx:id="nextQuestion" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#nextQuestion" text="Next question" />
+      <Label fx:id="alert" alignment="CENTER" layoutX="125.0" layoutY="268.0" prefHeight="6.0" prefWidth="199.0" text="Alert" />
+      <Label fx:id="question" alignment="CENTER" layoutX="119.0" layoutY="87.0" prefHeight="18.0" prefWidth="210.0" text="Question" />
+      <Label alignment="CENTER" layoutX="71.0" layoutY="32.0" text="Write the translation of the given word">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
    </children>
 </AnchorPane>

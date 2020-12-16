@@ -3,7 +3,6 @@ package sample.model;
 /*
 QuestionsIterator class represents Iterator design pattern.
  */
-
 public class QuestionsIterator implements IIterator {
 
     private final Questions questions;

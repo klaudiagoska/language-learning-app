@@ -2,9 +2,15 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Start">
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Start">
    <children>
-      <Button layoutX="274.0" layoutY="187.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+      <Button layoutX="191.0" layoutY="150.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="29.0" prefWidth="66.0" text="Start" />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="49.0" prefHeight="47.0" prefWidth="321.0" text="Language learning app">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

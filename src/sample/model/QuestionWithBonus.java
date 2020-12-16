@@ -3,7 +3,6 @@ package sample.model;
 /*
 QuestionWithBonus class represent Decorator design pattern.
  */
-
 public class QuestionWithBonus extends QuestionDecorator {
 
     public QuestionWithBonus(Question question) {
@@ -13,5 +12,10 @@ public class QuestionWithBonus extends QuestionDecorator {
     @Override
     public int calculatePoints() {
         return super.calculatePoints() + 1;
+    }
+
+    @Override
+    public Question clone() {
+        return new QuestionWithBonus(this);
     }
 }

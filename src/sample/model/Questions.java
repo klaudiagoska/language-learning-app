@@ -6,6 +6,7 @@ import java.util.List;
 public class Questions {
 
     private final List<Question> questionsList;
+    public int correctAnswersAmount = 0;
 
     public Questions() {
         questionsList = new ArrayList<>();
@@ -25,6 +26,10 @@ public class Questions {
 
     public IIterator createIterator() {
         return new QuestionsIterator(this);
+    }
+
+    public int size() {
+        return questionsList.size();
     }
 
     public void clear() {

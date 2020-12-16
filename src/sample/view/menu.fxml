@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Menu">
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Menu">
    <children>
-      <Button layoutX="235.0" layoutY="139.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestions" text="One choice questions" />
-      <Button layoutX="251.0" layoutY="187.0" mnemonicParsing="false" onAction="#goToInputQuestions" text="Input questions" />
+      <Button layoutX="160.0" layoutY="124.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestions" text="One choice questions" />
+      <Button layoutX="176.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToInputQuestions" text="Input questions" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="51.0" text="Which question category do you choose?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

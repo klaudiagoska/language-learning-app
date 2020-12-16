@@ -5,7 +5,6 @@ import javafx.scene.control.Label;
 /*
 State class represents State design pattern.
  */
-
 public abstract class State {
 
     Question question;

@@ -5,7 +5,6 @@ import javafx.scene.control.Label;
 /*
 AnsweredState class represents State design pattern.
  */
-
 public class AnsweredState extends State {
 
     public AnsweredState(Question question) {

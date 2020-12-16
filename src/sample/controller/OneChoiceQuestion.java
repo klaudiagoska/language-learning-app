@@ -83,6 +83,7 @@ public class OneChoiceQuestion extends AppController {
     private void checkAnswer() {
         if (currentQuestion.userAnswer.equals(currentQuestion.correctAnswer)) {
             User.getINSTANCE().addPoints(currentQuestion.calculatePoints());
+            questions.correctAnswersAmount++;
         }
     }
 

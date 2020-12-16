@@ -2,16 +2,14 @@ package sample.model;
 
 public class QuestionWithInput extends Question {
 
-    public String input;
-
     public QuestionWithInput() {}
+
+    public QuestionWithInput(String content, String correctAnswer) {
+        super(content, correctAnswer);
+    }
 
     public QuestionWithInput(QuestionWithInput questionWithInput) {
         super(questionWithInput);
-        if (questionWithInput != null) {
-            input = questionWithInput.input;
-            correctAnswer = questionWithInput.correctAnswer;
-        }
     }
 
     @Override
