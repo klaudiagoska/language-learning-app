@@ -58,7 +58,7 @@ public abstract class AppController implements IInitializable {
         questionList.add(question9);
 
         QuestionWithOneChoice question10 = new QuestionWithOneChoice("Horse", "el caballo",
-                List.of("el caballo", "el caballo", "el pájaro", "la águila"));
+                List.of("el caballo", "el cerdo", "el pájaro", "la águila"));
         questionList.add(question10);
 
         QuestionWithOneChoice question11 = new QuestionWithOneChoice("Hand", "la mano",
