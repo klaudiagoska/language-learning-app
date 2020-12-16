@@ -30,6 +30,7 @@ public abstract class AppController implements IInitializable {
         question2.answers = Arrays.asList("la frambuesa", "la naranja", "el aguacate", "la cereza");
         question2.correctAnswer = "la frambuesa";
         question2.state = new NonAnsweredState(question2);
+
         questionList.add(question1);
         questionList.add(question2);
 
@@ -39,23 +40,30 @@ public abstract class AppController implements IInitializable {
     public void createInputQuestions() {
         init();
         List<Question> questionList = new ArrayList<>();
-        QuestionWithInput question1 = new QuestionWithInput();
+        Question question1 = new QuestionWithInput();
         question1.setContent("Apple");
         question1.correctAnswer = "la manzana";
         question1.state = new NonAnsweredState(question1);
-        QuestionWithInput question2 = new QuestionWithInput();
+        Question question2 = new QuestionWithInput();
         question2.setContent("Raspberry");
         question2.correctAnswer = "la frambuesa";
         question2.state = new NonAnsweredState(question2);
+
+        Question question = new QuestionWithBonus(new QuestionWithInput());
+        question.setContent("TEST");
+        question.correctAnswer = "ans";
+        question.state = new NonAnsweredState(question);
+
         questionList.add(question1);
         questionList.add(question2);
+        questionList.add(question);
 
         addQuestions(questionList);
     }
 
     private void addQuestions(List<Question> questionList) {
         Collections.shuffle(questionList);
-        for (int i = 0; i < questionList.size() / 2; i++) {
+        for (int i = 0; i < 3; i++) {
             questions.addQuestion(questionList.get(i));
         }
     }

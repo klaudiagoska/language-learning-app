@@ -2,9 +2,8 @@ package sample.model;
 
 import javafx.scene.control.Label;
 
-public abstract class Question implements IQuestion {
+public abstract class Question {
 
-    private int id;
     private String content;
     public State state;
     public String correctAnswer;
@@ -18,12 +17,10 @@ public abstract class Question implements IQuestion {
         state = new NonAnsweredState(this);
     }*/
 
-    public Question() {
-    }
+    public Question() {}
 
     public Question(Question question) {
         if (question != null) {
-            id = question.id;
             content = question.content;
             state = question.state;
             correctAnswer = question.correctAnswer;

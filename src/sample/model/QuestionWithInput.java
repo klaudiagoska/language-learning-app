@@ -6,9 +6,6 @@ public class QuestionWithInput extends Question {
 
     public QuestionWithInput(QuestionWithInput questionWithInput) {
         super(questionWithInput);
-        if (questionWithInput != null) {
-            correctAnswer = questionWithInput.correctAnswer;
-        }
     }
 
     @Override
