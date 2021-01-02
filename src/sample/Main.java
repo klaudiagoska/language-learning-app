@@ -26,6 +26,6 @@ public class Main extends Application {
     }
 
     private void setObserver(IObserver observer) {
-        User.getINSTANCE().attach(new PopupCongratulations());
+        User.getINSTANCE().attach(observer);
     }
 }

@@ -6,16 +6,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InputQuestion">
+<AnchorPane prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #b8abcb;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InputQuestion">
    <children>
       <TextField fx:id="userAnswer" layoutX="144.0" layoutY="123.0" prefHeight="26.0" prefWidth="161.0" />
-      <Button fx:id="answer" layoutX="110.0" layoutY="177.0" mnemonicParsing="false" onAction="#answer" prefHeight="26.0" prefWidth="90.0" text="Answer" />
-      <Button fx:id="nextQuestion" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#nextQuestion" text="Next question" />
-      <Label fx:id="alert" alignment="CENTER" layoutX="125.0" layoutY="268.0" prefHeight="6.0" prefWidth="199.0" text="Alert" />
-      <Label fx:id="question" alignment="CENTER" layoutX="119.0" layoutY="87.0" prefHeight="18.0" prefWidth="210.0" text="Question" />
+      <Button fx:id="answer" layoutX="110.0" layoutY="177.0" mnemonicParsing="false" onAction="#answer" prefHeight="26.0" prefWidth="90.0" text="Answer" >
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Button>
+      <Button fx:id="nextQuestion" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#nextQuestion" text="Next question" >
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Button>
+      <Label fx:id="alert" alignment="CENTER" layoutX="125.0" layoutY="268.0" prefHeight="6.0" prefWidth="199.0" text="Alert" >
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="question" alignment="CENTER" layoutX="119.0" layoutY="87.0" prefHeight="18.0" prefWidth="210.0" text="Question" >
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Label>
       <Label alignment="CENTER" layoutX="71.0" layoutY="32.0" text="Write the translation of the given word">
          <font>
-            <Font size="18.0" />
+            <Font name="SansSerif Regular" size="18.0" />
          </font></Label>
    </children>
 </AnchorPane>

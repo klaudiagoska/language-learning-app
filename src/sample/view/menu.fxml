@@ -5,13 +5,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Menu">
+<AnchorPane prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #b8abcb;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Menu">
    <children>
-      <Button layoutX="160.0" layoutY="124.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestions" text="One choice questions" />
-      <Button layoutX="176.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToInputQuestions" text="Input questions" />
+      <Button layoutX="160.0" layoutY="124.0" mnemonicParsing="false" onAction="#goToOneChoiceQuestions" text="One choice questions">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Button>
+      <Button layoutX="176.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToInputQuestions" text="Input questions">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></Button>
       <Label alignment="CENTER" layoutX="61.0" layoutY="51.0" text="Which question category do you choose?">
          <font>
-            <Font size="18.0" />
+            <Font name="SansSerif Regular" size="18.0" />
          </font>
       </Label>
    </children>
