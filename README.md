@@ -1,7 +1,7 @@
 # Language learning app
 
 ### Description
-The language learning app is an application that allows you to quickly check your knowledge of basic Spanish vocabulary with a test. It has been created as a semester project for the Design Patterns course at the Jagiellonian University in 2020/2021. 
+Language learning app is an application that allows you to quickly check your knowledge of basic Spanish vocabulary with a test. It has been created as a semester project for the Design Patterns course at the Jagiellonian University in 2020/2021. 
 At the beginning of the application, the user is asked to select the category of questions that the test will consist of - it can be a test with one-choice questions or with questions where you have to type in an answer.  At the end of the test, the number of points scored by the user is displayed, as well as all questions with information on whether the user's answer was correct or not, and if not, the correct answer is displayed.
 
 ### Design patterns used in the project
