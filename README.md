@@ -24,8 +24,8 @@ Here is the simplified diagram with design patterns used in the project:
 
 ### Screenshots
 
-![](https://postimg.cc/6yTHwKtc)
+![](https://i.postimg.cc/sD4bYfLk/app1.png)
 
-![](https://postimg.cc/QHPfdzM3)
+![](https://i.postimg.cc/dVQp4PPL/app2.png)
 
-![](https://postimg.cc/FYLDdxfJ)
+![](https://i.postimg.cc/GmMNf7dz/app3.png)
