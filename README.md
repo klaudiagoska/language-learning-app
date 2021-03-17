@@ -20,3 +20,12 @@ At the beginning of the application, the user is asked to select the category of
 Here is the simplified diagram with design patterns used in the project:
 
 ![](https://i.postimg.cc/BbTjVD5n/schemat.jpg)
+
+
+### Screenshots
+
+![](https://postimg.cc/6yTHwKtc)
+
+![](https://postimg.cc/QHPfdzM3)
+
+![](https://postimg.cc/FYLDdxfJ)
